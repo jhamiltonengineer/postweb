@@ -1,0 +1,26 @@
+clone_folder: c:\gopath\src\github.com\sosedoff\pgweb
+
+environment:
+  GOPATH: c:\gopath
+  CGO_ENABLED: 0
+
+services:
+  - postgresql
+
+install:
+  - set PATH=%GOPATH%\bin;%PATH%
+  - echo %PATH%
+  - echo %GOPATH%
+  - cd %APPVEYOR_BUILD_FOLDER%
+  - go env
+  - go version
+  - go get github.com/golang/dep/cmd/dep
+  - dep ensure
+
+build_script:
+  - go build
+
+test_script:
+  - go test -cover ./...
+
+deploy: off
