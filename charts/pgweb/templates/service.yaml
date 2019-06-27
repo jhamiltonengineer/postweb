@@ -8,7 +8,7 @@ metadata:
       apiVersion: ambassador/v1
       kind: Mapping
       name: pgweb-ui_mapping
-      prefix: /
+      prefix: /pgweb/
       service: pgweb-pgweb:80
   labels:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
