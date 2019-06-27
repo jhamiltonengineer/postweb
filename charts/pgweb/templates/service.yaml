@@ -9,6 +9,7 @@ metadata:
       kind: Mapping
       name: pgweb-ui_mapping
       prefix: /pgweb/
+      rewrite: /
       service: pgweb-pgweb:80
   labels:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"

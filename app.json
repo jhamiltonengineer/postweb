@@ -4,7 +4,7 @@
   "website": "https://github.com/sosedoff/pgweb",
   "repository": "https://github.com/sosedoff/pgweb",
   "logo": "https://raw.githubusercontent.com/sosedoff/pgweb/master/static/img/icon.png",
-  "success_url": "/pgweb/",
+  "success_url": "/",
   "keywords": [
     "postgres",
     "database",
