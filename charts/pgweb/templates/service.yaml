@@ -10,7 +10,7 @@ metadata:
       name: pgweb-ui_mapping
       prefix: /pgweb/
       rewrite: /
-      service: pgweb-pgweb:80
+      service: pgweb-pgweb.default:80
   labels:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
